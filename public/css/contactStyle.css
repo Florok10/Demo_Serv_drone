@@ -1,0 +1,157 @@
+/* content */
+section{
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 900px;
+    display: flex;
+}
+
+.contact{
+    width: 60%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contact-form h2{
+    font-family: Fornato Regular;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #393E46;
+    z-index: 2;
+}
+
+.liner{
+    background-color: #AAD8D3;
+    width: 25%;
+    height: 2%;
+    position: absolute;
+    top: 2.5%;
+    left: 45%;
+    z-index: 1;
+}
+
+.contact-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-items input{
+    font-size: 16px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #393E46;
+    outline: none;
+    margin-top: 35px;
+}
+
+.cgu{
+    width: 100%;
+    margin: 2.5% 0;
+}
+.cgu span{
+    font-size: 14px;
+}
+
+.cgu input {
+    height: 20px;
+    margin-top: 0;
+    border: 1px solid #393E46;
+}
+
+.send-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-button button{
+    background-color: #00ADB5;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section img{
+    height: 900px;
+}
+
+/* media contact form */
+@media screen and (max-width:520px){
+    section img{
+        display: none;
+    }
+
+    section .contact{
+        width: 100%;
+        background-image: url(../img/img-contact.jpg);
+        background-size: cover;
+    }
+
+    .contact-form{
+        background-color: rgb(255, 255, 255, 0.7);
+        width: 70%;
+        height: 70%;
+        padding: 30px 20px;
+    }
+
+    .liner{
+        display: none;
+    }
+
+    .contact-items{
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    section{
+        height: 800px;
+    }
+
+    section img{
+        display: none;
+    }
+
+    section .contact{
+        width: 100%;
+        background-image: url(../img/img-contact.jpg);
+        background-size: cover;
+    }
+
+    .contact-form{
+        background-color: rgb(255, 255, 255, 0.7);
+        width: 70%;
+        height: 70%;
+        padding: 30px 20px;
+    }
+
+    .liner{
+        display: none;
+    }
+
+    .contact-items{
+        margin: 0 20px;
+    }
+}

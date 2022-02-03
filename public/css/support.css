@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins;
+    color: #393E46;
+}
+
+/* content */
+.down {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pbutton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+.support {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 600px;
+}
+
+.liner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.sup{
+    font-size: 36px;
+    font-family: 'fonarto';
+}
+
+#lignebleu {
+    position: absolute;
+    top: 15%;
+    background-color: #AAD8D3;
+    width: 20%;
+    height: 20px;
+    z-index: -1;
+    top: 35%;
+    left: 45%;
+}
+
+.photo{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/dronesup.png);
+    background-size: cover;
+}
+
+#bloc1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.notice{
+    font-size: 16px;
+}
+
+.button {
+    background-color: #00ADB5; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px
+}
+
+@media screen and (max-width: 900px){
+    .support{
+        height: 800px;
+    }
+    .photo{
+        display: none;
+    }
+
+    #bloc1{
+        background-image: url(../img/dronesup.png);
+        background-size: cover;
+        width: 100%;
+    }
+
+    .down{
+        background-color: rgba(255, 255, 255, 0.438);
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #lignebleu{
+        display: none;
+    }
+
+
+}
+ 
+/* Footer */
+.footer-container2{
+    display: none;
+}
+
+footer{
+    background-color: #393E46;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer-container ul{
+    height: 130px;
+}
+
+.footer-container ul li{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-contact img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.footer-contact li:last-child{
+    font-weight: 300;
+    display: flex;
+    font-size: 14px;
+}
+
+footer div:last-child{
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1024px){
+    .footer-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    footer{
+        height: 400px;
+        align-items: center;
+    }
+    .footer-container{
+        display: none;
+    }
+  
+    .footer-container2{
+        display: flex;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .footer-container2 ul{
+        height: 130px;
+    }
+    
+    .footer-container2 ul li{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .footer-container2 ul li a{
+        color: #fff;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    
+    .footer-contact2 img{
+        width: 15px;
+        margin-right: 10px;
+    }
+    
+    .footer-contact2 li:last-child{
+        font-weight: 300;
+        display: flex;
+        font-size: 10px;
+    }
+    
+    footer div:last-child{
+        color: #fff;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    
+}

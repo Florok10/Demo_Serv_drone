@@ -1,0 +1,568 @@
+/*  Content  */
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/home/img-accueil.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    height: 60vw;
+    padding-bottom: 30px;
+}
+
+.header div:first-child{
+    width: 90%;
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(42px);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.header div:first-child h1{
+    font-family: 'Fonarto';
+    font-size: clamp(16, 1.8vw, 30px);
+    color: #fff;
+}
+
+.header div:first-child p{
+    font-size: clamp(14px, 1.5vw, 20px);
+    color: #fff;
+    text-align: center;
+}
+
+.header div:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #393E46;
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: clamp(30px, 7vw, 50px);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.container-links-social a{
+    width: clamp(25px, 5vw, 40px);
+}
+
+.three-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2.5% 0;
+}
+
+.three-img h2{
+    font-size: 24px;
+    font-family: 'Fonarto';
+}
+
+.img-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5% 0 5% 0;
+}
+
+.img-container div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.img-container div h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.three-img div p{
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.example-images {
+    max-width: 300px;
+}
+
+.h3-titles-examples {
+    margin-top: 20px;
+}
+
+.p-examples {
+    max-width: 250px;
+}
+
+section.wave{
+    background-color: #393E46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wave h2{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Fonarto';
+    margin-top: 2.5%;
+}
+
+.wave div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave div img{
+    width: 50%;
+}
+
+.wave div div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wave div div p {
+    margin: 5% 0;
+    font-size: 14px;
+    color: #fff;
+    text-align: justify;
+}
+
+#slider {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 45vw;
+    margin: 80px auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+
+  #slider label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+  }
+
+  #slide1 {
+    background-image: url(../images/home/s1.jpg);
+    background-size: cover;
+
+  }
+
+  #slide2 {
+    background-image: url(../images/home/s2.jpg);
+    background-size: cover;
+  }
+
+  #slide3 {
+    background-image: url(../images/home/s3.jpg);
+    background-size: cover;
+  }
+
+
+  /* Slider Functionality */
+
+  /* Active Slide */
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3 {
+    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+  }
+
+  /* Next Slide */
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(15%, 0, -100px);
+  }
+
+
+  /* Next to Next Slide */
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(30%, 0, -250px);
+  }
+
+  /* Previous to Previous Slide */
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(-30%, 0, -250px);
+  }
+
+  /* Previous Slide */
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-15%, 0, -100px);
+  }
+
+  #slider input{
+    display: none;
+}
+
+section.wave-bottom{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wave-bottom img{
+    width: 100%;
+}
+
+.wave-bottom h2{
+    font-size: 24px;
+    font-family: 'Fonarto';
+}
+
+.wave-bottom span{
+    background-color: #AAD8D3;
+    position: absolute;
+    width: 40%;
+    height: 20px;
+    bottom: 0;
+    left: 40%;
+    z-index: -1;
+}
+
+.abrahima{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.abrahima div:last-child{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.abrahima div div{
+    font-size: 14px;
+    width: 75%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.abrahima div div p {
+    margin: 2.5% 0;
+}
+
+.brahima img{
+    width: 80%;
+}
+
+.partners{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+.partners h2{
+    font-size: 24px;
+    font-family: 'Fonarto';
+}
+
+.partners div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.partners div img{
+    width: 80px;
+}
+
+.partners div img:first-child{
+    height: 15px;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px){
+
+    .header div:first-child{
+        width: 60%;
+    }
+
+    .header div:first-child p{
+        text-align: center;
+    }
+
+    section.three-img{
+        display: flex;
+        height: 800px;
+    }
+
+    .three-img h2{
+        font-size: 30px;
+        font-family: 'Fonarto';
+    }
+
+    .img-container{
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-container div{
+        width: 30%;
+    }
+
+    section.wave{
+        height: 1000px;
+    }
+
+    .wave h2{
+        font-size: 30px;
+    }
+
+    .wave div{
+        width: 85%;
+    }
+
+    .wave div p{
+        width: 80%;
+    }
+
+    .wave-bottom h2{
+        font-size: 30px;
+    }
+
+    .wave-bottom span{
+        width: 30%;
+    }
+
+    .abrahima{
+        height: 700px;
+    }
+
+    .abrahima div:last-child{
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .abrahima div:last-child div{
+        font-size: 14px;
+        width: 50%;
+        height: 350px;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .abrahima img{
+        width: 45%;
+    }
+
+    .partners{
+        height: 400px;
+    }
+
+    .partners h2{
+        font-size: 30px;
+    }
+
+    .partners div img{
+        width: 120px;
+    }
+
+    .partners div img:first-child{
+        height: 20px;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    section.wave{
+        height: 650px;
+    }
+
+    .wave h2{
+        font-size: 36px;
+    }
+
+    .wave div{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 500px;
+    }
+
+    #slider{
+        width: 35%;
+        height: 70%;
+    }
+
+    .wave div div{
+        width: 40%;
+        height: 300px;
+    }
+
+    .wave div div p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .partners{
+        height: 400px;
+        display: flex;
+        margin: 2% 0 5% 0;
+    }
+
+    .partners h2{
+        font-size: 36px;
+    }
+
+    .partners div img{
+        width: 150px;
+    }
+
+    .partners div img:first-child{
+        height: 20px;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1100px){
+
+    .header{
+        height: 900px;
+        padding: 35px;
+    }
+    .header div:first-child{
+        width: 45%;
+        align-self: flex-start;
+        margin-left: 150px;
+        padding: 50px;
+    }
+
+    .header div:first-child h1{
+        font-size: 48px;
+    }
+
+    .header div:first-child p{
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .header div:last-child{
+        width: 170px;
+        height: 80px;
+    }
+
+    .header div:last-child img{
+        width: 30px;
+    }
+
+    section.three-img{
+        height: 800px;
+    }
+
+    .three-img h2{
+        font-size: 36px;
+        font-family: 'Fonarto';
+    }
+
+    .img-container{
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-container div{
+        width: 25%;
+    }
+
+    .img-container div h3{
+        font-size: 24px;
+    }
+
+    .three-img div p{
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .wave-bottom h2{
+        font-size: 36px;
+    }
+
+    .wave-bottom span{
+        width: 15%;
+        left: 47%;
+        bottom: 2%;
+    }
+
+    .abrahima{
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .abrahima div:last-child{
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .abrahima div:last-child div{
+        font-size: 16px;
+        width: 50%;
+        height: 450px;
+    }
+
+    .abrahima img{
+        width: 35%;
+    }
+}

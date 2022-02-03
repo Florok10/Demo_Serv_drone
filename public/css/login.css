@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #393E46;
+}
+
+/* content */
+section{
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+section .inscription-img{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    background-image: url(../img/connexion-img.jpg);
+}
+
+.inscription-form{
+    width: 40%;
+    height: 80%;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255, 0.7) ;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.connection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 50%;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #393E46;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.connection-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.connection-items input{
+    font-size: 16px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #393E46;
+    outline: none;
+    margin-top: 35px;
+}
+
+.send-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-button a{
+    background-color: #00ADB5;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(110%);
+}
+
+.inscription{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px){
+    .inscription-form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    section .inscription-img{
+        width: 100%;
+    }
+
+    .inscription-form{
+        width: 80%;
+    }
+}
+
+
+/* Footer */
+.footer-container2{
+    display: none;
+}
+
+footer{
+    background-color: #393E46;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer-container ul{
+    height: 130px;
+}
+
+.footer-container ul li{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-contact img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.footer-contact li:last-child{
+    font-weight: 300;
+    display: flex;
+    font-size: 14px;
+}
+
+footer div:last-child{
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1024px){
+    .footer-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    footer{
+        height: 400px;
+        align-items: center;
+    }
+    .footer-container{
+        display: none;
+    }
+
+    .footer-container2{
+        display: flex;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .footer-container2 ul{
+        height: 130px;
+    }
+
+    .footer-container2 ul li{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .footer-container2 ul li a{
+        color: #fff;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .footer-contact2 img{
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    .footer-contact2 li:last-child{
+        font-weight: 300;
+        display: flex;
+        font-size: 10px;
+    }
+
+    footer div:last-child{
+        color: #fff;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+}

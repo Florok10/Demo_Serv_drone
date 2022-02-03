@@ -1,0 +1,529 @@
+/* product introduction */
+section.product-container{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-container img{
+    width: 45%;
+    height: 25%;
+}
+
+.product-container>div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+h1 {
+    width: fit-content;
+}
+
+.name-rectangle_container {
+    position: relative;
+}
+
+.no-stock {
+    color: #4b4b4b;
+    border: 3px solid #4b4b4b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.submit-number-container {
+    display: flex;
+}
+
+.quantity-input {
+    width: 30px;
+    padding: 0;
+    text-align: center;
+    height: 30px;
+}
+
+.button form {
+    width: max-content;
+    margin-right: 20px;
+}
+
+.submit-btn-add-cart {
+    border: 3px solid #00ADB5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: max-content;
+    color: #00ADB5;
+}
+
+.product-container h2{
+    font-size: 18px;
+    width: 85%;
+}
+
+.product-container p{
+    width: 75%;
+    font-size: 14px;
+}
+#delete_form {
+    display: none;
+}
+.button{
+    display: flex;
+}
+
+.button a{
+    margin-right: 20px;
+}
+
+.submit-btn-add-cart, .button a {
+    transition: all 500;
+}
+
+.submit-btn-add-cart:hover, .button a:hover {
+    background-color: #00ADB5;
+    color: #fff;
+}
+
+.button a{
+    text-align: center;
+    border: 3px solid #00ADB5;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ADB5;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.button a:last-child{
+    width: 210px;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    .product-container img{
+        width: 50%;
+        height: 40%;
+    }
+
+    .product-container>div{
+        width: 70%;
+        height: 400px;
+    }
+
+    .product-container p{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    section.product-container{
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+    }
+
+    .product-container img{
+        width: 25%;
+        height: 50%;
+    }
+
+    .product-container>div{
+        width: 40%;
+        height: 500px;
+    }
+
+    .product-container h2{
+        font-size: 24px;
+    }
+
+    .product-container p{
+        font-size: 16px;
+        width: 75%;
+    }
+
+    .button a:first-child{
+        font-size: 16px;
+    }
+
+    .button a{
+        font-size: 16px;
+    }
+
+}
+
+/* three images */
+section.three-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 1400px;
+    position: relative;
+}
+
+.three-img h2{
+    font-size: 24px;
+    font-family: Fornato Regular;
+}
+
+.img-container{
+    width: 90%;
+    display: flex;
+    height: 1200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-container div{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-container div img{
+    width: 60%;
+}
+
+.img-container div h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.three-img div p{
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+}
+
+img.hvr-pulse{
+    display: none;
+}
+
+@media screen and (min-height: 768px){
+    section.three-img{
+        display: flex;
+        height: 800px;
+    }
+
+    .three-img h2{
+        font-size: 30px;
+        font-family: Fornato Regular;
+    }
+
+    .img-container{
+        height: 50%;
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-container div{
+        width: 30%;
+    }
+
+    img.hvr-pulse{
+        position: absolute;
+        width: 50px;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    section.three-img{
+        position: relative;
+        height: 900px;
+    }
+
+    .three-img h2{
+        font-size: 36px;
+        font-family: Fornato Regular;
+    }
+
+    .img-container{
+
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    img.hvr-pulse{
+        display: block;
+        position: absolute;
+        width: 50px;
+        top: 0;
+    }
+
+    .img-container div{
+        width: 25%;
+    }
+
+    .img-container div img{
+        margin-bottom: 30px;
+    }
+
+    .img-container div h3{
+        font-size: 24px;
+    }
+
+    .three-img div p{
+        font-size: 16px;
+        width: 80%;
+    }
+}
+
+/* full image */
+section.drone-full{
+    width: 100%;
+}
+
+section.drone-full img{
+    width: 100%;
+}
+
+/* product info */
+section.product-info{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-info img{
+    width: 70%;
+}
+
+.product-info div{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info div h2{
+    font-family: Fornato Regular;
+    text-align: center;
+}
+
+.product-info div p{
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+    display: flex;
+}
+
+@media screen and (min-width: 768px){
+    section.product-info{
+        display: flex;
+        flex-direction: row;
+        height: 350px;
+    }
+
+    .product-info img{
+        width: 40%;
+    }
+
+    .product-info div{
+        width: 40%;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    section.product-info{
+        height: 700px;
+    }
+
+    .product-info img{
+        width: 30%;
+    }
+
+    .product-info div{
+        width: 25%;
+        height: 300px;
+    }
+
+    .product-info div h2{
+        font-size: 36px;
+    }
+
+    .product-info div p{
+        font-size: 16px;
+    }
+}
+
+/* Caractéristiques */
+section.caracteristics{
+    background-color: #AAD8D3;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.caracteristics h2{
+    font-family: Fornato Regular;
+    font-size: 24px;
+    width: 60%;
+}
+
+.caracteristics div{
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.caracteristics div ul{
+    width: auto;
+    text-align: center;
+}
+
+.caracteristics div ul li{
+    margin: 5px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1024px){
+    .caracteristics div ul li{
+        margin: 5px;
+        font-size: 16px;
+    }
+}
+
+/* application */
+section.app{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.app>div:first-child{
+    width: 80%;
+}
+
+.app div:first-child h2{
+    width: 70%;
+    font-size: 24px;
+    font-family: Fonarto Regular;
+}
+
+.app>div:first-child span{
+    position: absolute;
+    background-color: #AAD8D3;
+    width: 20%;
+    height: 15px;
+    left: 17%;
+    top: 28%;
+    z-index: -1;
+}
+
+.app>div:last-child{
+    display: flex;
+    width: 100%;
+}
+
+.app>div:last-child span{
+    font-weight: 600;
+}
+
+
+.appdrone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.appdrone img{
+    width: 50%;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.download img{
+    width: 50%;
+}
+
+@media screen and (min-width: 768px){
+    section.app{
+        height: 400px;
+    }
+
+    .app>div:first-child span{
+        width: 25%;
+        top: 17%;
+        left: 24%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    section.app{
+        height: 650px;
+    }
+
+    .app>div:first-child h2{
+        font-size: 36px;
+    }
+
+    .app>div:first-child span{
+        width: 20%;
+        height: 20px;
+        top: 24%;
+        left: 25%;
+    }
+
+    .app>div:last-child{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .appdrone{
+        width: 30%;
+    }
+
+    .appdrone img{
+        width: 40%;
+    }
+
+    .download{
+        width: 30%;
+    }
+}

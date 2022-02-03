@@ -1,0 +1,134 @@
+/*h1 style*/
+.h1_container {
+    position: relative;
+    margin: 5% 0;
+}
+
+.blue_rectangle {
+    position: absolute;
+    width: clamp(80px, 13%, 220px);
+    height: clamp(20px, 2vw, 30px);
+    z-index: -1;
+    background: rgba(0, 173, 181, 0.5);
+    top: 35%;
+    left: 50%;
+}
+
+/* Page Histoire des Drones */
+
+.histoireContainer img {
+    width: auto;
+}
+
+.anciennePhoto {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 125px;
+    font-family: Poppins;
+}
+
+.texteDrone{
+    width: 100%;
+}
+
+.texteDrone p {
+    margin: 5% 0;
+}
+
+.anciennePhoto p {
+    line-height: 1.5;
+
+}
+.anciennePhoto h2 {
+    text-align: center;
+    font-family: Fonarto ;
+    width: 100%;
+    margin-left: 0;
+}
+
+
+.anciennePhoto img {
+    height: 515px;
+}
+
+.anciennePhoto .texteDrone {
+    width: 35%;
+}
+
+.logo-container{
+    margin: 30px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container a img{
+    margin: 0px 15px;
+}
+
+.titlebl{
+    position: relative;
+}
+
+.none{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .anciennePhoto p{
+        font-size: 14px;
+    }
+
+    .anciennePhoto{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .anciennePhoto img{
+        width: 50%;
+    }
+
+    .anciennePhoto .texteDrone{
+        width: 40%;
+    }
+
+    .HrectangleBleu{
+        width: 35%;
+    }
+
+    .none{
+        display: block;
+    }
+
+    .true{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .anciennePhoto img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .anciennePhoto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anciennePhoto .texteDrone{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .HrectangleBleu{
+        height: 20px
+    }
+}
